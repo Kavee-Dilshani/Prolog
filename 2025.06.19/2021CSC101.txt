@@ -1,0 +1,57 @@
+bigger(elephant,horse).
+bigger(horse,donkey).
+bigger(donkey,dog).
+bigger(donkey,monkey).
+
+-------------------------
+
+quert -->
+
+bigger(donkey,dog).
+true
+bigger(monkey,elephant).
+false
+
+.................................................
+
+is_bigger(X,Y) :- bigger(X,Y).
+is_bigger(X,Y) :- bigger(X,Z),is_bigger(Z,Y).
+
+---------------------------------------
+
+is_bigger(elephant,Y).
+Y = horse
+
+is_bigger(elephant,Y)
+Y = horse
+Y = donkey
+Y = dog
+Y = monkey
+
+.......................................
+
+conected(colombo,anuradhapura).
+conected(kandy,mathhale).
+conected(mathale ,dambulla).
+conected(polonnaruwa,anuradhapura).
+conected(colombo,puttalam).
+
+---------------------------
+
+connected(mathale,dambulla).
+procedure `connected(A,B)' does not exist
+conected(kandy,mathhale).
+1true
+conected(kandy,mathhale).
+
+...................................................
+
+ is_bigger(P,donkey),is_bigger(Q,horse).
+ 
+ ------------------------------------
+ 
+ parent(john,mary).
+parent(kavinda,sandhuni).
+parent(nirmala,mary).
+parent(susi,sandhuni).
+parent(kamal,kavinda).
