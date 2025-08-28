@@ -1,0 +1,54 @@
+member(a, [a,b,c]).
+true
+
+append([1,2],[3,4], X).
+X = [1, 2, 3, 4]
+
+append(X,Y,[1,3,4]).
+X = [],
+Y = [1, 3, 4]
+
+length([1,3,4],L).
+
+length(X,2).
+
+select(b,[a,b,c],R).
+
+nth0(0,[a,b,c],X).
+X = a
+
+nth1(2,[a,b,c],X).
+X = b
+
+reverse([1,2,3],X).
+X = [3, 2, 1]
+
+X = 34+56
+X = 34+56
+X is 34+56
+X = 90
+X is max(34,56).
+X = 56
+X is min(34,56).
+X = 34
+X is abs(34).
+X = 34
+X is abs(34.98).
+X = 34.98
+X is sqrt(3).
+X = 1.7320508075688772
+X is sin(30).
+X = -0.9880316240928618
+X is sin(30//10).
+X = 0.1411200080598672
+X is 30//10.
+X = 3
+X is 30 mod 3.
+X = 0
+X is 3**3.
+X = 27
+
+5 > 3.
+1true
+3 =< 2.
+false
