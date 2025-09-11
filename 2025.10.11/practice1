@@ -1,0 +1,8 @@
+\+ operator
+
+use for nagation
+
+disjunction 
+
+goal1 ; goal2  ->  either goal1 or goal2
+
